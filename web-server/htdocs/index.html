@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Live Eclipse Party View</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+
+    <div class="container">
+
+    <div class="jumbotron">
+      <h3 class="text-center">Live Eclipse Party View</h3>
+      <iframe class="center-block" height="480" width="854" src="https://www.youtube.com/embed/live_stream?channel=UCFGq65VNyXOLm8xS7UrR_lg&autoplay=1&rel=0"></iframe>
+    </div>
+
+    <table class="table">
+      <tbody>
+      <tr>
+        <th>Time:</th>
+        <td><span id="time-formatted"></span></td>
+      </tr>
+      <tr>
+        <th>Temperature probe (TMP36):</th>
+        <td><span id="sensor-tempext"></span>&deg;C</td>
+      </tr>
+      <tr>
+        <th>Temperature at HTS221:</th>
+        <td><span id="sensor-temph"></span>&deg;C</td>
+      </tr>
+      <tr>
+        <th>Temperature at LPS25H:</th>
+        <td><span id="sensor-tempp"></span>&deg;C</td>
+      </tr>
+      <tr>
+        <th>Relative humidity:</th>
+        <td><span id="sensor-humidity"></span>%</td>
+      </tr>
+      <tr>
+        <th>Pressure:</th>
+        <td><span id="sensor-pressure"></span> millibars</td>
+      </tr>
+      <tr>
+        <th>Magnetic field:</th>
+        <td><span id="sensor-mag-x"></span>, <span id="sensor-mag-y"></span>, <span id="sensor-mag-z"></span> &mu;T</td>
+      </tr>
+      <tr>
+        <th>Angular velocity:</th>
+        <td><span id="sensor-gyro-x"></span>, <span id="sensor-gyro-y"></span>, <span id="sensor-gyro-z"></span> rad/s</td>
+      </tr>
+      <tr>
+        <th>Acceleration:</th>
+        <td><span id="sensor-accel-x"></span>, <span id="sensor-accel-y"></span>, <span id="sensor-accel-z"></span> g</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
