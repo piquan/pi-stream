@@ -13,7 +13,7 @@ function updateOne(name, value)
 function gotUpdate(data, textStatus, jqXHR)
 {
     console.log(data);
-    updateOne("#sensor", data);
+    updateOne("#data", data);
     var date = new Date(data['time'] * 1000);
     $("#time-formatted").text(
         date.toLocaleString([], {timeZone: "America/Los_Angeles"}));

@@ -25,37 +25,82 @@
         <th>Time:</th>
         <td><span id="time-formatted"></span></td>
       </tr>
+      <tr><th style="background-color:#f9f9f9" colspan="2">Sensors</th></tr>
       <tr>
-        <th>Temperature probe (TMP36):</th>
-        <td><span id="sensor-tempext"></span>&deg;C</td>
+        <td>Primary temperature probe (TMP36):</td>
+        <td><span id="data-sensor-tempext"></span>&deg;C (<span id="data-sensor-tempextf"></span>&deg;F)</td>
       </tr>
       <tr>
-        <th>Temperature at HTS221:</th>
-        <td><span id="sensor-temph"></span>&deg;C</td>
+        <td>Board temperature at HTS221:</td>
+        <td><span id="data-sensor-temph"></span>&deg;C (<span id="data-sensor-temphf"></span>&deg;F)</td>
       </tr>
       <tr>
-        <th>Temperature at LPS25H:</th>
-        <td><span id="sensor-tempp"></span>&deg;C</td>
+        <td>Board temperature at LPS25H:</td>
+        <td><span id="data-sensor-tempp"></span>&deg;C (<span id="data-sensor-temppf"></span>&deg;F)</td>
       </tr>
       <tr>
-        <th>Relative humidity:</th>
-        <td><span id="sensor-humidity"></span>%</td>
+        <td>Relative humidity:</td>
+        <td><span id="data-sensor-humidity"></span>%</td>
       </tr>
       <tr>
-        <th>Pressure:</th>
-        <td><span id="sensor-pressure"></span> millibars</td>
+        <td>Pressure:</td>
+        <td><span id="data-sensor-pressure"></span> millibars</td>
       </tr>
       <tr>
-        <th>Magnetic field:</th>
-        <td><span id="sensor-mag-x"></span>, <span id="sensor-mag-y"></span>, <span id="sensor-mag-z"></span> &mu;T</td>
+        <td>Magnetic field:</td>
+        <td><span id="data-sensor-mag-x"></span>, <span id="data-sensor-mag-y"></span>, <span id="data-sensor-mag-z"></span> &mu;T</td>
       </tr>
       <tr>
-        <th>Angular velocity:</th>
-        <td><span id="sensor-gyro-x"></span>, <span id="sensor-gyro-y"></span>, <span id="sensor-gyro-z"></span> rad/s</td>
+        <td>Angular velocity:</td>
+        <td><span id="data-sensor-gyro-x"></span>, <span id="data-sensor-gyro-y"></span>, <span id="data-sensor-gyro-z"></span> rad/s</td>
       </tr>
       <tr>
-        <th>Acceleration:</th>
-        <td><span id="sensor-accel-x"></span>, <span id="sensor-accel-y"></span>, <span id="sensor-accel-z"></span> g</td>
+        <td>Acceleration:</td>
+        <td><span id="data-sensor-accel-x"></span>, <span id="data-sensor-accel-y"></span>, <span id="data-sensor-accel-z"></span> g</td>
+      </tr>
+      <tr>
+        <th style="background-color:#f9f9f9" colspan="2">Camera <a href="https://picamera.readthedocs.io/en/release-1.10/api_camera.html">(docs)</a></th>
+      </tr>
+      <tr>
+        <td>Brightness:</td>
+        <td><span id="data-camera-brightness"></span></td>
+      </tr>
+      <tr>
+        <td>Contrast:</td>
+        <td><span id="data-camera-contrast"></span></td>
+      </tr>
+      <tr>
+        <td>Saturation:</td>
+        <td><span id="data-camera-saturation"></span></td>
+      </tr>
+      <tr>
+        <td>Sharpness:</td>
+        <td><span id="data-camera-sharpness"></span></td>
+      </tr>
+      <tr>
+        <td>ISO:</td>
+        <td><span id="data-camera-iso"></span></td>
+      </tr>
+      <tr>
+        <td>Exposure speed:</td>
+        <td><span id="data-camera-exposurespeed"></span> &mu;s</td>
+      </tr>
+      <tr>
+        <td>Exposure compensation:</td>
+        <td><span id="data-camera-exposurecompensation"></span> (in 1/6 stops)</td>
+      </tr>
+      <tr>
+        <td>Analog gain:</td>
+        <td><span id="data-camera-analoggain"></span></td>
+      </tr>
+      <tr>
+        <td>Digital gain:</td>
+        <td><span id="data-camera-digitalgain"></span></td>
+      </tr>
+      <tr>
+        <td>White balance gains:</td>
+        <td>R:<span id="data-camera-awbgains-r"></span>
+            B:<span id="data-camera-awbgains-b"></span></td>
       </tr>
       </tbody>
     </table>
