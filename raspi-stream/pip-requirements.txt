@@ -1,0 +1,5 @@
+httplib2==0.10.3
+picamera==1.13
+pyserial==3.4
+sdnotify==0.3.2
+sense-hat==2.2.0

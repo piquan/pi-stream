@@ -1,0 +1,16 @@
+[Unit]
+Description=Raspberry Pi Sensor / Camera Streamer
+
+[Service]
+Type=notify
+User=pi
+Group=pi
+Restart=always
+Environment=FFMPEG=../../FFmpeg/ffmpeg
+ExecStart=/home/pi/src/pi-stream/raspi-stream/runme.sh
+WorkingDirectory=/home/pi/src/pi-stream
+WatchdogSec=10
+NotifyAccess=all
+
+[Install]
+WantedBy=multi-user.target
